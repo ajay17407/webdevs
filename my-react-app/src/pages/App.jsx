@@ -36,13 +36,13 @@ function App(props) {
   return(
         <div className="h-full box-border">
           <center>
-          <div className="border-2 h-[400px] mx-auto mt-9 w-[360px] ">
+          <div className="border-2  border-gray-300 h-[400px] mx-auto mt-9 w-[360px] ">
            
            <img src={insta}  className="block w-56 h-20 my-6 cursor-pointer" alt="INSTAGRAM"></img>
            
            <form>
-              <input className="block w-64 border-2 h-8 my-2 focus:outline-none " type="text" placeholder="Phone number,username, or email" autoComplete="on" value={name} onChange={(e)=>handlenamechange(e)}></input>
-              <input className="block w-64 border-2 h-8 my-2 focus:outline-none" type="password" placeholder="Password" value={pswrd} onChange={(e)=>handlepswrdchange(e)}></input>
+              <input className="block w-64 border-2 border-gray-300 h-8 my-2 focus:outline-none " type="text" placeholder="Phone number,username, or email" autoComplete="on" value={name} onChange={(e)=>handlenamechange(e)}></input>
+              <input className="block w-64 border-2  border-gray-300 h-8 my-2 focus:outline-none" type="password" placeholder="Password" value={pswrd} onChange={(e)=>handlepswrdchange(e)}></input>
            </form>
 
            <button className="bg-blue-400 rounded-md w-64 text-white h-8 my-4 cursor-default" onClick={handleLogin}>Log in</button>
@@ -60,7 +60,7 @@ function App(props) {
 
            
          </div>
-         <div className="mt-4 border-2 w-[360px] h-12 flex items-center justify-center font-sans">
+         <div className="mt-4 border-2  border-gray-300 w-[360px] h-12 flex items-center justify-center font-sans">
               <p>Don't have an account ?<Link className="text-blue-500" to="/Signup"> sign up</Link></p>
          </div>
 

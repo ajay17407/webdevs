@@ -45,7 +45,7 @@ function Signup(props)
    return(
       <div className="h-full box-border">
         <center>
-        <div className="border-2 h-[630px] mx-auto mt-9 w-[360px] ">
+        <div className="border-2  border-gray-300 h-[630px] mx-auto mt-9 w-[360px] ">
          
          <img src={insta}  className="block w-56 h-20 mt-6 mb-2 cursor-pointer" alt="INSTAGRAM"></img>
          
@@ -60,10 +60,10 @@ function Signup(props)
         </div>
 
         <form >
-            <input id="mno" type="text" placeholder="Mobile number or Email" className="block w-64 border-2 h-8 my-2 focus:outline-none "  value={mno} onChange={(e)=>handleMnochange(e)} ></input>
-            <input id="fullname" type="text" placeholder="Full Name" className="block w-64 border-2 h-8 my-2 focus:outline-none " value={fullname} onChange={(e)=>handleFullNamechange(e)}></input>
-            <input type="text" placeholder="Username"  className="block w-64 border-2 h-8 my-2 focus:outline-none " value={sname} onChange={(e)=>handlesnamechange(e)}></input>
-            <input type="password" placeholder="Password" className="block w-64 border-2 h-8 my-2 focus:outline-none " value={spswrd} onChange={(e)=>handlespswrdchange(e)} ></input>
+            <input id="mno" type="text" placeholder="Mobile number or Email" className="block w-64 border-2  border-gray-300 h-8 my-2 focus:outline-none "  value={mno} onChange={(e)=>handleMnochange(e)} ></input>
+            <input id="fullname" type="text" placeholder="Full Name" className="block w-64 border-2   border-gray-300 h-8 my-2 focus:outline-none " value={fullname} onChange={(e)=>handleFullNamechange(e)}></input>
+            <input type="text" placeholder="Username"  className="block w-64 border-2  border-gray-300 h-8 my-2 focus:outline-none " value={sname} onChange={(e)=>handlesnamechange(e)}></input>
+            <input type="password" placeholder="Password" className="block w-64 border-2  border-gray-300 h-8 my-2 focus:outline-none " value={spswrd} onChange={(e)=>handlespswrdchange(e)} ></input>
         </form>
 
         <p className="text-gray-500 text-xs mt-6 mx-12"> People who use our service may have uploaded your contact information to Instagram. <a className="text-blue-950">Learn More.</a></p>
@@ -73,7 +73,7 @@ function Signup(props)
         <button className="bg-blue-400 rounded-md w-64 text-white h-8 my-4 cursor-default" onClick={handleSignup}>Sign up</button>
          
        </div>
-       <div className="mt-4 border-2 w-[360px] h-12 flex items-center justify-center font-sans text-[13px]">
+       <div className="mt-4 border-2  border-gray-300 w-[360px] h-12 flex items-center justify-center font-sans text-[13px]">
             <p>Have an account?<Link to="/" className="text-blue-500 ">Log in</Link></p>
        </div>
 
